@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <!-- AWS用 -->
+  <head>
+  <meta charset="utf-8">
+  <title>Wordle風画像変換 | wordle style image conversion</title>
+  <meta name="description" content="画像をWordle風の絵文字及び画像に変換するソフト">
+  <link rel="icon" type="image/png" href="https://plum-chloride.jp/image/bigicon.png">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="./public/style/style.css">
+  <link rel="stylesheet" href="https://unpkg.com/sanitize.css"/>
+
+  <script src="./src/get_image.js" defer></script>
+
+
+  <!-- twitter test -->
+  <!-- <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:site" content="@plum_chloride">
+  <meta name="twitter:creator" content="@plum_chloride">
+  <meta name="twitter:image" content="https://plum-chloride.jp/kotonoha-tango/public/img/card.png">
+  <meta property="og:title" content="ことのはたんご | 単語推理ゲーム">
+  <meta property="og:description" content="日本語版Wordle。1日1回単語推測パズルゲーム">
+  <meta name="twitter:description" content="日本語版Wordle。1日1回単語推測パズルゲーム">
+  <meta property="og:image" content="https://plum-chloride.jp/kotonoha-tango/public/img/card.png">
+  <meta property="og:url" content="https://plum-chloride.jp/kotonoha-tango/index.html" />
+  <meta name="twitter:url" content="https://plum-chloride.jp/kotonoha-tango/index.html">
+  <meta property="og:site_name" content="ことのはたんご | 単語推理ゲーム">
+  <meta property="og:locale" content="ja_JP" /> -->
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-HZCPVJSXFG"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-HZCPVJSXFG');
+  </script>
+  </head>
+  <body>
+    <div id="header" class="center-flex"><h1>Wordle風画像変換</h1></div>
+
+    <div id="body">
+      <section>
+        <h2>説明</h2>
+        <p>　画像を入力することで、その画像をWordleの結果画面の様な画像に変換します。またコピペ用のテキストも出力します。</p>
+        <div id="exsample">
+          <figure>
+            <figcaption>変換前</figcaption>
+            <img src="http://placehold.jp/6b6b6b/ffffff/500x500.png">
+          </figure>
+          <figure>
+            <figcaption>変換後</figcaption>
+            <img src="http://placehold.jp/6b6b6b/ffffff/500x500.png">
+          </figure>
+        </div>
+      </section>
+
+      <section>
+        <h2>入力画像選択</h2>
+        <div id="image_input">
+          <p>　入力画像は1:1や3:2、4:3やその逆数の比率で調整されます。</p>
+          <div  class="mobile-center-flex">
+            <label class="upload-label">
+              画像ファイルを選択
+              <input type="file" id="before_img_input" accept="image/jpeg, image/png">
+            </label>
+          </div>
+          <br>
+          <div id="before_img_preview" class="non-visi">
+            <div class="center-flex"><img id="before_img"src=""></div>
+            <div class="center-flex">
+              <p id="before_img_wh">width:---px, height:---px</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <h2>出力</h2>
+
+      </section>
+
+      <section>
+        <h2>仕組み</h2>
+
+      </section>
+
+      <section>
+        <h2>その他情報</h2>
+
+      </section>
+
+    </div>
+    <div id="footer" class="center-flex">
+      <div id="footer_pro">
+        <div><h2>大西力登</h2></div>
+        <div>
+          <h3>プロダクト</h3>
+          <ul>
+            <li><a href="https://plum-chloride.jp/kotonoha-tango/index.html" target="_blank">日本語版Wordle 「ことのはたんご」</a></li>
+            <li class="footer-current">Wordle風画像変換アプリ</li>
+            <li><a href="https://plum-chloride.jp/output/VR-CoPractice/index.html" target="_blank">VRチア練習アプリ 「VR-CoPractice」</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3>サイト</h3>
+          <ul>
+            <li><a href="https://plum-chloride.jp/" target="_blank">ポートフォリオ</a></li>
+            <li><a href="https://note.com/plumchloride" target="_blank">Note</a></li>
+            <li><a href="https://github.com/plumchloride" target="_blank">GitHub</a></li>
+            <li><a href="https://qiita.com/Ohnishi81" target="_blank">Qiita</a></li>
+          </ul>
+        </div>
+      </div>
+      <address>
+        &copy; 2022 Rikito Ohnishi
+      </address>
+    </div>
+</html>
