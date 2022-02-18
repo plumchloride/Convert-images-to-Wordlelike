@@ -38,7 +38,7 @@ body{
 }
 
 
-#image_input .upload-label {
+.upload-label {
   display: inline-block;
   cursor: pointer;
   margin: 1em 0;
@@ -51,10 +51,10 @@ body{
   border-radius: 2.5em;
   transition: 0.2s;
 }
-#image_input .upload-label:hover {
+.upload-label:hover {
   box-shadow: 0 8px 10px -2px rgba(0, 0, 0, 0.4); /* 影を表示 */
 }
-#image_input .upload-label input {
+.upload-label input {
   display: none;
 }
 #image_input img{
@@ -120,7 +120,7 @@ body{
     max-width: 80vw;
     max-height: 40vw;
   }
-  #image_input .upload-label {
+  .upload-label {
     margin:0px;
   }
 

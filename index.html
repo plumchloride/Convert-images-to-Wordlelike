@@ -12,6 +12,8 @@
   <link rel="stylesheet" href="https://unpkg.com/sanitize.css"/>
 
   <script src="./src/get_image.js" defer></script>
+  <script src="./src/change_image.js" defer></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.6.0/p5.js"></script>
 
 
   <!-- twitter test -->
@@ -78,6 +80,20 @@
 
       <section>
         <h2>出力</h2>
+        <div id="image_output">
+          <p>　入力した画像をWordle風の画像に変換します。</p>
+          <div  class="mobile-center-flex">
+            <label class="upload-label">
+              画像を変換
+              <input type="button" id="after_btn" onclick="change_img();return false;">
+            </label>
+          </div>
+          <br>
+          <div id="after_img_preview">
+            <div id="canvas1"></div>
+            <div class="center-flex"><img id="after_img"src=""></div>
+          </div>
+        </div>
 
       </section>
 
